@@ -41,7 +41,7 @@ class DoublyCircularLinkedList:
             return False
         if index == 0:
             return self.add_at_head(data)
-        if index == self.count:
+        if index == self.count -1:
             return self.add_at_tail(data)
         
         new_node = Node(data)
@@ -83,7 +83,7 @@ class DoublyCircularLinkedList:
             return True
        
         inp_node = self.head
-        for ind in range(index):
+        for indx in range(index):
             inp_node = inp_node.next
         inp_node.previous.next = inp_node.next
         inp_node.next.previous = inp_node.previous
