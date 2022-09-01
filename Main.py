@@ -93,7 +93,7 @@ class DoublyCircularLinkedList:
         return True
 
     def get_previous_next(self, index) -> list:
-         if index < 0 or index >= self.count:
+        if index < 0 or index >= self.count:
             return -1
         inp_node = self.head
         for indx in range(index):
