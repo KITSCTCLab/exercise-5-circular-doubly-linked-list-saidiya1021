@@ -15,8 +15,8 @@ class DoublyCircularLinkedList:
         if self.count>0:
              new_node.previous = self.end
              new_node.next=None
-            self.end.next = new_node
-            self.head.previous = new_node
+             self.end.next = new_node
+             self.head.previous = new_node
         else:
              self.head = new_node
              self.end = new_node
@@ -28,8 +28,8 @@ class DoublyCircularLinkedList:
         if self.count>0:
              new_node.previous = self.end
              new_node.next=None
-            self.end.next = new_node
-            self.head.previous = new_node
+             self.end.next = new_node
+             self.head.previous = new_node
         else:
              self.head = new_node
              self.end = new_node
