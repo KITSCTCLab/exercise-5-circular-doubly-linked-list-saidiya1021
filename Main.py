@@ -9,6 +9,7 @@ class DoublyCircularLinkedList:
     def __init__(self):
         self.head = None
         self.count = 0
+        self.end=None
 
     def add_at_tail(self, data) -> bool:
         new_node=Node(data)
